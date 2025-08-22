@@ -78,6 +78,7 @@
 }
 .single-blog-style1 .img-holder img{
     width: 100%;
+    height: 250px;
 }
 .single-blog-style1:hover .img-holder img {
     transform: scale(1.2) rotate(1deg);
