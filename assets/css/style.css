@@ -8049,9 +8049,11 @@ select:focus {
 .msp-subtitle { color: #667085; margin: 0; }
 
 .msp-gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+    display: grid
+;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin: 50px 0px;
 }
 
 .msp-gallery-item {
