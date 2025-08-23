@@ -115,6 +115,7 @@
 	line-height: 1.20em;
 	font-weight: 700;
     text-transform: capitalize;
+    width: 800px;
 }
 
 
@@ -153,7 +154,7 @@
 	line-height: 28px;
 	font-weight: 500;
     text-transform: none;
-    width: 400px;
+    width: 600px;
 }
 
 
@@ -193,6 +194,7 @@
 .main-slider .content .btns-box a.btn-one{
     padding-left: 35px;
     padding-right: 35px;
+    margin-top: 20px;
 }
 .main-slider .content .btns-box a:after{
     background: var(--thm-primary);
@@ -207,9 +209,9 @@
 
 .slider-video-gallery{
     position: relative;
-    display: flex;
+    /* display: flex; */
     align-items: center;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 .slider-video-gallery .icon{
     position: relative;

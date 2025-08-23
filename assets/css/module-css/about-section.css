@@ -245,6 +245,14 @@
     background-position: top right;
     background-size: cover;
 }  
+.about-style2_image-bg img{
+
+    width: 100%;
+    height: 100%;
+    background-size: cover; 
+    background-repeat: no-repeat;
+
+}  
 .about-style2-image-box {
     position: absolute;
     left: 0;

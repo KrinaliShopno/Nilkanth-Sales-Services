@@ -224,6 +224,9 @@ li{
     position: relative;
     z-index: 1;
 }
+.btn-one .txt a{
+color: #fff;
+}
 .btn-one:hover,
 .btn-one:focus{
     color: #ffffff;
@@ -1594,6 +1597,42 @@ select:focus {
     line-height: 0;
 }
 
+/* Top-level */
+.navbar .dropdown { position: relative; }
+.navbar .dropdown > .dropdown-menu {
+  position: absolute; top: 100%; left: 0; display: none;
+  min-width: 220px; background:#fff; border:1px solid #e5e7eb; border-radius:8px;
+  padding:.4rem 0; list-style:none; z-index:50;
+}
+
+/* Second+ levels */
+.navbar .dropdown-sub { position: relative; }
+.navbar .dropdown-sub > .dropdown-menu {
+  position: absolute; top: 0; left: 100%; display: none;
+  min-width: 200px; background:#fff; border:1px solid #e5e7eb; border-radius:8px;
+  padding:.35rem 0;
+}
+
+/* Hover open on desktop */
+@media (hover:hover) and (pointer:fine) {
+  .navbar .dropdown:hover > .dropdown-menu { display:block; }
+  .navbar .dropdown-sub:hover > .dropdown-menu { display:block; }
+}
+
+.navbar .dropdown-menu a {
+  display:block; padding:.55rem .9rem; color:#111827; text-decoration:none;
+}
+.navbar .dropdown-menu a:hover { background:#f3f4f6; }
+
+/* Mobile: open via JS (class .open) and stack inline */
+@media (max-width: 992px) {
+  .navbar .dropdown > .dropdown-menu,
+  .navbar .dropdown-sub > .dropdown-menu {
+    position: static; border:0; box-shadow:none; display:none; margin: .25rem 0 0;
+  }
+  .navbar .dropdown.open > .dropdown-menu,
+  .navbar .dropdown-sub.open > .dropdown-menu { display:block; }
+}
 
 
 
@@ -3403,7 +3442,7 @@ select:focus {
 .working-process-style2-image{
     position: absolute;
     top: 80px;
-    left: 0;
+    left: 15%;
     bottom: 0;
     right: 0;
     display: block;
