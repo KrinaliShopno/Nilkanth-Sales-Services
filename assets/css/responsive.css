@@ -967,7 +967,7 @@
     padding-bottom: 50px;
 }    
 .sec-title h2 {
-    font-size: 38px;
+    font-size: 31px;
 }    
 .sec-title h2 br{
     display: none;
@@ -1092,7 +1092,7 @@
 
 /*** Choose Style1 Area Css ***/
 .choose-style1-area {
-    padding: 110px 0px 65px;
+    padding: 110px 0px 10px;
 }   
 .choose-style1_image-box img {
     max-width: 100%;
@@ -1100,7 +1100,7 @@
     width: 100%;
 }
 .choose-style1_image-box .round-box {
-    top: 50px;
+    top: -35%;
 }
 
 .choose-style1-content {
@@ -1550,7 +1550,7 @@
 }
 .post-social-share {
     padding-top: 20px;
-    text-align: center;
+    /* text-align: center; */
 }
 .post-social-share .title, 
 .post-social-share .social-link {
@@ -1597,8 +1597,8 @@
 
 /*** About Style3 Area Css ***/
 .about-style3-top {
-    margin-left: -30px;
-    margin-right: -30px;
+    margin-left: 0px;
+    margin-right:   0px;
 }
 
 .about-style3-content {
@@ -2190,17 +2190,11 @@
 .main-slider .slider-image img{
     width: 50%;
 }
-
-
-
-
-
-
-
-
-  
     
-    
+.about-style3-top {
+    margin-left: 0px;
+    margin-right:   0px;
+}    
     
 }
 
@@ -2233,7 +2227,10 @@
     top: 200px;
     right: 10%;
 }
-
+.about-style3-top {
+    margin-left: 0px;
+    margin-right:   0px;
+}
 
 /*** Main Slider Style2 Css ***/ 
 .main-slider.style2 .content .big-title h2 {

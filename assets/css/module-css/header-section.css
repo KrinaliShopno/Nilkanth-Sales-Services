@@ -273,6 +273,7 @@
 .our-service-location-area .select-box .nice-select .option.focus, 
 .our-service-location-area .select-box .nice-select .option.selected.focus {
     background-color: var(--thm-primary);
+    color: #fff;
 }
 .our-service-location-area .select-box .nice-select .option {
     line-height: 30px;

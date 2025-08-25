@@ -121,7 +121,15 @@
     z-index: 1;
 }
 
-
+@media (max-width:767px) {
+    .breadcrumb-area .title h2{
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1.3em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+}
 
 
 

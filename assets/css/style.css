@@ -103,6 +103,8 @@ a:focus {
 }
 
 
+
+
 img {
     max-width: 100%;
     height: auto;
@@ -3820,6 +3822,7 @@ select:focus {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 .contact-form-box1 form .button-box .left{
     position: relative;
@@ -8137,7 +8140,12 @@ select:focus {
 }
 
 
-
+@media (max-width:425px) {
+    .single-working-process-two {
+ 
+        width:100% ;
+    }
+}
 
 
 
