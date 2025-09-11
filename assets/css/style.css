@@ -3528,6 +3528,44 @@ select:focus {
     width: 60px;
     z-index: 1;
 }
+.logo-slider {
+  background-color: rgba(0, 50, 111, 0.03);
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+.logo-slider .slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-slider .slide-track {
+  display: flex;
+  width: calc(200px * 12); /* 6 logos * 2 for smooth loop */
+  animation: scroll-left 25s linear infinite;
+  gap: 4%;
+}
+
+.logo-slider .slide {
+  flex: 0 0 200px; /* each logo fixed width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-slider .slide img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+/* continuous scrolling */
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(calc(-200px * 6)); } /* half track */
+}
+
 .quick-contact-box .icon span:before{
     position: relative;
     display: block;
@@ -5656,6 +5694,9 @@ select:focus {
 .single-shop-item-style3 .title-holder h3 a:hover{
     color: var(--thm-primary);
 }
+ .title-holder a{
+    color: var(--thm-primary);
+}
 .single-shop-item-style3 .title-holder h4{
     color: var(--thm-primary);
     font-size: 18px;
@@ -5990,7 +6031,7 @@ select:focus {
 .shop-page-one_inner{
     position: relative;
     display: block;
-    background: #ecf2f6;
+    /* background: #ecf2f6; */
     padding: 80px 0px 110px;
 }
 .shop-page-one_inner .auto-container{
@@ -8071,13 +8112,13 @@ select:focus {
 }
 .msp-gallery-item img {
   width: 100%;
-  height: 100%;
-  aspect-ratio: 4/3;            /* consistent tiles */
+  height: 250px;
   object-fit: cover;
   display: block;
   transform: scale(1);
   transition: transform .35s ease;
 }
+
 .msp-overlay {
   position: absolute; inset: 0;
   display: grid; place-items: center;

@@ -24,7 +24,10 @@
 .single-footer-widget.martop{
     margin-top: 3px;
 }
-
+.bottom-inner{
+    display: flex !important;
+    justify-content: center;
+}
 .single-footer-widget .title {
     position: relative;
     display: block;
@@ -389,6 +392,7 @@
 .order-box .title-holder .text p{
     margin: 0;
 }
+
 .order-box .btns-box{
     position: relative;
     display: block;
